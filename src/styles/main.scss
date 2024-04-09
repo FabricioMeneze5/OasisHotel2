@@ -1,5 +1,52 @@
-$bgColor: rgba(255, 145, 0, 0.884);
+$bgColor: #212529;
+$title1Color: #ffffff;
+$secondaryColor: #198754;
 
 body {
     background-color: $bgColor;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin title($fontSize: 32px) {
+    font-size: $fontSize;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 5px;
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(8px);
+}
+
+.title--big {
+    @include title(40px);
+}
+
+.title {
+    @include title;
+}
+
+.title--small {
+    @include title(20px);
+}
+
+.navLink {
+    @include text;
+    color: $secondaryColor;
+}
+
+.button {
+    @include text;
+    background-color: $secondaryColor;
 }
