@@ -1,15 +1,8 @@
-$bgColor: #212529;
-$title1Color: #ffffff;
-$secondaryColor: #198754;
+@use 'colors';
+@use 'reset';
 
 body {
-    background-color: $bgColor;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    background-color: colors.$bgColor;
 }
 
 @mixin title($fontSize: 32px) {
@@ -43,10 +36,10 @@ body {
 
 .navLink {
     @include text;
-    color: $secondaryColor;
+    color: colors.$secondaryColor;
 }
 
 .button {
     @include text;
-    background-color: $secondaryColor;
+    background-color: colors.$secondaryColor;
 }
