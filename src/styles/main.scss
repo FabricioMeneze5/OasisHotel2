@@ -6,6 +6,10 @@ body {
     background-color: colors.$bgColor;
 }
 
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
 @mixin title($fontSize: 32px) {
     font-size: $fontSize;
 }
