@@ -1,5 +1,6 @@
-@use 'colors';
 @use 'reset';
+@use 'colors';
+@use 'header';
 
 body {
     background-color: colors.$bgColor;
@@ -42,4 +43,22 @@ body {
 .button {
     @include text;
     background-color: colors.$secondaryColor;
+
+    &:hover {
+        background-color: darken(colors.$secondaryColor, 10%);
+    }
+}
+
+.navButton {
+    @include text;
+    color: colors.$secondaryColor;
+    border-bottom: solid 2px transparent;
+
+    &:hover {
+        border-color: colors.$secondaryColor;
+    }
+
+    &--is-active {
+        border-color: colors.$secondaryColor;
+    }
 }
