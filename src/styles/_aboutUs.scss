@@ -1,0 +1,50 @@
+@use 'colors';
+
+#aboutUs {
+    h2 {
+        text-align: center;
+        font-style: italic;
+        color: colors.$secondaryColor;
+    }
+
+    .aboutUs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+
+        h3 {
+            font-weight: 400;
+        }
+
+        &__child:nth-child(1)  {
+            img {
+                width: 100%;
+                border-radius: 0.37rem;
+            }
+        }
+
+        &__child:nth-child(2) {
+            color: colors.$title1Color;
+
+            p {
+                margin: 16px 0;
+            }
+
+            h3 {
+                margin-bottom: 16px;
+            }
+
+            .socialMidia {
+                display: flex;
+
+                &__item {
+                    margin-right: 8px;
+
+                    img {
+                        width: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

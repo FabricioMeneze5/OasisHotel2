@@ -1,6 +1,7 @@
 @use 'reset';
 @use 'colors';
 @use 'header';
+@use 'aboutUs';
 
 body {
     background-color: colors.$bgColor;
@@ -8,6 +9,10 @@ body {
 
 h1, h2 {
     font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    margin: 24px 0;
 }
 
 @mixin title($fontSize: 32px) {
