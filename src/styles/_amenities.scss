@@ -1,0 +1,60 @@
+.amenities {
+    #img-displayed {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        border: 5px solid #fff;
+        transform: translate(-50%, -50%);
+        max-width: 90%;
+        max-height: 90%;
+        z-index: 2;
+    }
+    
+    #background {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+        }
+
+    &__tabs {
+        margin-bottom: 16px;
+
+        &__button {
+            padding: 8px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 8px;
+
+        &--is-active {
+            display: grid;
+        }
+
+        &__item {
+            overflow: hidden;
+            border-radius: 2%;
+
+            img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                transition: all 1.1s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

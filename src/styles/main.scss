@@ -2,6 +2,7 @@
 @use 'colors';
 @use 'header';
 @use 'aboutUs';
+@use 'amenities';
 
 body {
     background-color: colors.$bgColor;
@@ -13,6 +14,9 @@ h1, h2 {
 
 h2 {
     margin: 24px 0;
+    text-align: center;
+    font-style: italic;
+    color: colors.$secondaryColor;
 }
 
 @mixin title($fontSize: 32px) {
@@ -52,6 +56,10 @@ h2 {
 .button {
     @include text;
     background-color: colors.$secondaryColor;
+    color: colors.$title1Color;
+    padding: 6px 12px;
+    border-radius: 10%;
+    border: none;
 
     &:hover {
         background-color: darken(colors.$secondaryColor, 10%);
@@ -61,7 +69,10 @@ h2 {
 .navButton {
     @include text;
     color: colors.$secondaryColor;
+    background-color: transparent;
+    border: none;
     border-bottom: solid 2px transparent;
+    font-weight: bold;
 
     &:hover {
         border-color: colors.$secondaryColor;

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Estilo para a imagem em miniatura */
+        .img-thumbnail {
+            width: 200px;
+            height: 200px;
+        }
+
+        /* Estilo para a imagem ampliada */
+        #img-displayed {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+            max-height: 90%;
+            z-index: 999;
+        }
+
+        /* Estilo para o fundo escurecido */
+        #background {
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 998;
+        }
+    </style>
+</head>
+<body>
+    <!-- Galeria de imagens -->
+    <img src="./dist/images/amenities/gym(1).jpg" class="img-thumbnail">
+    <img src="./dist/images/amenities/gym(2).jpg" class="img-thumbnail">
+    <img src="./dist/images/amenities/gym(3).jpg" class="img-thumbnail">
+
+    <!-- Imagem ampliada e fundo escurecido -->
+    <img id="img-displayed">
+    <div id="background"></div>
+
+    <script>
+        // Seleciona todas as imagens em miniatura
+        var thumbnails = document.querySelectorAll('.img-thumbnail');
+
+        // Seleciona a imagem ampliada e o fundo escurecido
+        var displayedImg = document.querySelector('#img-displayed');
+        var background = document.querySelector('#background');
+
+        // Adiciona um evento de clique a cada imagem em miniatura
+        thumbnails.forEach(function(thumbnail) {
+            thumbnail.addEventListener('click', function() {
+                // Mostra a imagem ampliada e o fundo escurecido
+                displayedImg.style.display = 'block';
+                background.style.display = 'block';
+
+                // Define o src da imagem ampliada para ser o mesmo da miniatura clicada
+                displayedImg.src = this.src;
+            });
+        });
+
+        // Adiciona um evento de clique ao fundo escurecido
+        background.addEventListener('click', function() {
+            // Esconde a imagem ampliada e o fundo escurecido
+            displayedImg.style.display = 'none';
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
