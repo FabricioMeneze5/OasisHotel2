@@ -1,7 +1,7 @@
 @use 'colors';
 
-#aboutUs {
-    .aboutUs {
+.aboutUs {
+    &__content {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 24px;
@@ -10,14 +10,14 @@
             font-weight: 400;
         }
 
-        &__child:nth-child(1)  {
+        &__image  {
             img {
                 width: 100%;
                 border-radius: 0.37rem;
             }
         }
 
-        &__child:nth-child(2) {
+        &__text {
             color: colors.$title1Color;
 
             p {

@@ -41,13 +41,13 @@
         </div>
     </header>
     <div class="container">
-        <section id="aboutUs">
+        <section class="aboutUs">
             <h2 class="title--big">About us</h2>
-            <div class="aboutUs">
-                <div class="aboutUs__child">
+            <div class="aboutUs__content">
+                <div class="aboutUs__content__image">
                     <img src="./dist/images/aboutUs/front of the hotel.jpg">
                 </div>
-                <div class="aboutUs__child">
+                <div class="aboutUs__content__text">
                     <h3 class="title">History</h3>
                     <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, dolorem! Ullam tenetur non saepe. Quos veritatis facere officiis culpa amet iste placeat dolor consequatur eligendi nesciunt! Nostrum voluptates esse commodi.</p>
                     <h3 class="title">Social Midia</h3>
@@ -88,8 +88,13 @@
                 </button>
             </nav>
 
-
-            <img id="img-displayed">
+            <div class="displayed">
+                <img id="displayed__img">
+                <div class="controls">
+                    <button id="prev-button">prev</button>
+                    <button id="next-button">next</button>
+                </div>
+            </div>
             <div id="background"></div>
 
             <ul id="spa" class="amenities__list">
