@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 //Select imgs, buttons and bg
 var displayedImg = document.querySelector('#displayed__img');
 var background = document.querySelector('#background');
@@ -41,3 +42,4 @@ background.addEventListener('click', function() {
     displayed.style.display = 'none';
     this.style.display = 'none';
 });
+})

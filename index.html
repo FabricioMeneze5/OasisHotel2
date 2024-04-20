@@ -41,7 +41,7 @@
         </div>
     </header>
     <div class="container">
-        <section class="aboutUs">
+        <section id="aboutUs" class="aboutUs">
             <h2 class="title--big">About us</h2>
             <div class="aboutUs__content">
                 <div class="aboutUs__content__image">
@@ -71,7 +71,7 @@
                 </div>
             </div>
         </section>
-        <section class="amenities">
+        <section id="amenities" class="amenities">
             <h2 class="title--big">Amenities</h2>
             <nav class="amenities__tabs">
                 <button data-tab-button="spa" class="amenities__tabs__button navButton navButton--is-active">
@@ -97,7 +97,7 @@
             </div>
             <div id="background"></div>
 
-            <ul id="spa" class="amenities__list">
+            <ul data-tab-id="spa" class="amenities__list amenities__list--is-active">
                 <li class="amenities__list__item">
                     <img class="img-thumbnail" src="./dist/images/amenities/spa(1).jpg">
                 </li>
@@ -112,9 +112,53 @@
                 </li>
             </ul>
 
-            <h2 class="title--big">Amenities</h2>
+            <ul data-tab-id="gym" class="amenities__list">
+                <li class="amenities__list__item">
+                    <img class="img-thumbnail" src="./dist/images/amenities/gym(1).jpg">
+                </li>
+                <li class="amenities__list__item">
+                    <img class="img-thumbnail" src="./dist/images/amenities/gym(2).jpg">
+                </li>
+                <li class="amenities__list__item">
+                    <img class="img-thumbnail" src="./dist/images/amenities/gym(3).jpg">
+                </li>
+                <li class="amenities__list__item">
+                    <img class="img-thumbnail" src="./dist/images/amenities/gym(4).jpg">
+                </li>
+            </ul>
+
+            <ul data-tab-id="restaurant" class="amenities__list">
+                <li class="amenities__list__item">
+                    <img class="img-thumbnail" src="./dist/images/amenities/restaurant(1).jpg">
+                </li>
+                <li class="amenities__list__item">
+                    <img class="img-thumbnail" src="./dist/images/amenities/restaurant(2).jpg">
+                </li>
+                <li class="amenities__list__item">
+                    <img class="img-thumbnail" src="./dist/images/amenities/restaurant(3).jpg">
+                </li>
+                <li class="amenities__list__item">
+                    <img class="img-thumbnail" src="./dist/images/amenities/restaurant(4).jpg">
+                </li>
+            </ul>
+
+            <ul data-tab-id="pool" class="amenities__list">
+                <li class="amenities__list__item">
+                    <img class="img-thumbnail" src="./dist/images/amenities/pool(1).jpg">
+                </li>
+                <li class="amenities__list__item">
+                    <img class="img-thumbnail" src="./dist/images/amenities/pool(2).jpg">
+                </li>
+                <li class="amenities__list__item">
+                    <img class="img-thumbnail" src="./dist/images/amenities/pool(3).jpg">
+                </li>
+                <li class="amenities__list__item">
+                    <img class="img-thumbnail" src="./dist/images/amenities/pool(4).jpg">
+                </li>
+            </ul>
         </section>
     </div>
-    <script src="./src/main.js"></script>
+    <script src="./src/script/main.js"></script>
+    <script src="./src/script/_amenities.js"></script>
 </body>
 </html>

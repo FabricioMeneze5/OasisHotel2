@@ -1,62 +1,6 @@
 @use 'colors';
 
 .amenities {
-    .displayed {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-height: 90vh;
-        width: 80vw;
-        z-index: 2;
-        overflow: hidden;
-        background-color: colors.$title1Color;
-        
-        #displayed__img {
-            width: 100%;
-        }
-        
-
-        .controls {
-            display: flex;
-            justify-content: space-between;
-
-                button {
-                    position: absolute;
-                    top: 0;
-                    height: 100%;
-                    width: 5em;
-                    background-color: rgba(255, 255, 255, 0.130);
-                    border: none;
-                    cursor: pointer;
-                    font-size: 1.5em;
-
-                    &:nth-child(1) {
-                        left: 0;
-                    }
-                    &:nth-child(2) {
-                        right: 0;
-                    }
-
-                    &:hover {
-                        background-color: rgba(255, 255, 255, 0.4);
-                    }
-                }
-        }
-    }
-    
-    #background {
-        display: none;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.7);
-        z-index: 1;
-        }
-
     &__tabs {
         margin-bottom: 16px;
 
@@ -68,7 +12,7 @@
     }
 
     &__list {
-        display: grid;
+        display: none;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 8px;
 
@@ -79,6 +23,7 @@
         &__item {
             overflow: hidden;
             border-radius: 2%;
+            margin-top: 8px;
 
             img {
                 width: 100%;
