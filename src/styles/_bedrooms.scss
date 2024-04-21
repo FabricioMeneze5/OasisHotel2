@@ -1,0 +1,50 @@
+@use 'colors';
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+
+    &__card {
+        background-color: colors.$title1Color;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-bottom: 16px;
+
+        h5 {
+            margin-bottom: 16px;
+        }
+        
+        &__img {
+            width: 100%;
+            object-fit: cover;
+            transition: all 1.1s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        &__content {
+            padding: 0 16px 16px;
+
+            img {
+                width: 16px;
+                height: auto;
+                margin-right: 5px;
+            }
+
+            span {
+                display: block;
+                font-weight: bold;
+            }
+            
+            p {
+                margin-bottom: 16px;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+}
