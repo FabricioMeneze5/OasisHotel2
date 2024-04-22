@@ -9,7 +9,6 @@
         background-color: colors.$title1Color;
         overflow: hidden;
         border-radius: 10px;
-        margin-bottom: 16px;
 
         h5 {
             margin-bottom: 16px;
@@ -21,7 +20,7 @@
             transition: all 1.1s;
 
             &:hover {
-                transform: scale(1.1);
+                transform: scale(1.05);
             }
         }
         &__content {
