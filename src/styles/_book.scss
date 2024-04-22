@@ -1,0 +1,30 @@
+@use 'colors';
+
+.book {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+
+    &__address {
+        & > img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 16px;
+
+            h3 {
+                color: colors.$title1Color;
+                text-align: center;
+                margin-bottom: 8px;
+            }
+
+            p {
+                color: colors.$title1Color;
+            }
+        }
+    }
+}

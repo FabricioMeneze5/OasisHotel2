@@ -274,6 +274,71 @@
                 </li>
             </ul>
         </section>
+        <section id="book">
+            <h2 class="title--big">Book</h2>
+            <div class="book">
+                <div class="book__form">
+                    <form>
+                        <input type="text" id="nameId" placeholder="Name:" name="name">
+                        <input type="email" id="emailId" placeholder="E-mail" name="email">
+                        <input type="tel" id="phoneId" placeholder="Phone:" name="phone">
+                        <input type="text" id="roomId" placeholder="Room:" name="room">
+                        <div>
+                            <div>
+                                <label for="adultsNumberId">Adults</label>
+                                <input type="number" id="adultsNumberId" name="adults">
+                                <label for="checkInId">Check-in</label>
+                                <input type="date" id="checkInId" name="checkin">
+                            </div>
+                            <div>
+                                <label for="childrenNumberId">Children</label>
+                                <input type="number" id="childrenNumberId">
+                                <label for="checkOutId">Check-out</label>
+                                <input type="date" id="checkOutId" name="checkout">
+                            </div>
+                        </div>
+                        <textarea placeholder="Would you like something else? Let us know:"></textarea>
+                        <div>
+                            <label>I have read and agree to the <a href="#">terms</a>.</label>
+                            <input type="checkbox" id="idTerms">
+                        </div>
+                        <button id="paymentButtun" type="submit" class="button">payment</button>
+                    </form>
+                </div>
+                <div class="book__address">
+                    <img src="./dist/images/book/map.jpg" alt="map fake Oasis">
+                    <div class="book__address__content">
+                        <div>
+                            <h3 class="title--small">
+                                <img src="./dist/images/book/geo-alt-fill.svg" alt="signal location">
+                                Address
+                            </h3>
+                            <p class="text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="title--small">
+                                <img src="./dist/images/book/telephone-fill.svg" alt="signal telephone">
+                                Contact
+                            </h3>
+                            <p class="text">
+                                999 999 999
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="title--small">
+                                <img src="./dist/images/book/envelope-fill.svg" alt="signal email">
+                                E-mail
+                            </h3>
+                            <p class="text">
+                                LoremIpsumDolor@Lorem.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <script src="./src/script/main.js"></script>
     <script src="./src/script/_amenities.js"></script>
