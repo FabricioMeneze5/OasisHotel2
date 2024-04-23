@@ -5,6 +5,70 @@
     grid-template-columns: 1fr 1fr;
     gap: 24px;
 
+    &__form {
+        background-color: colors.$title1Color;
+        border-radius: 10px;
+        padding: 16px;
+        height: auto;
+
+        input, textarea {
+            width: 100%;
+            padding: 6px 12px;
+            margin-bottom: 16px;
+            border-radius: 10px;
+            border: 1px solid #dee2e6;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0 16px;
+        }
+
+        #idTerms {
+            display: none;
+
+            &:checked ~ .switch {
+                background-color: colors.$secondaryColor;
+            }
+
+            &:checked ~ .switch .slider {
+                background-color: colors.$title1Color;
+                transform: translateX(180%);
+            }
+        }
+
+        .switch {
+            display: inline-flex;
+            position: relative;
+            align-items: center;
+            border: 1px solid #dee2e6;
+            width: 32px;
+            height: 15px;
+            border-radius: 40px;
+            transition: all .5s ease-in-out;
+            cursor: pointer;
+
+            .slider {
+                position: absolute;
+                left: 2%;
+                background-color: #a5a9ad;
+                border-radius: 50%;
+                width: 10px;
+                height: 10px;
+                transition: all .5s ease-in-out;
+            }
+        }
+    }
+
     &__address {
         & > img {
             width: 100%;
@@ -14,11 +78,11 @@
         &__content {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px;
             margin-top: 16px;
 
             h3 {
                 color: colors.$title1Color;
-                text-align: center;
                 margin-bottom: 8px;
             }
 
@@ -26,5 +90,9 @@
                 color: colors.$title1Color;
             }
         }
+    }
+
+    button {
+        display: block;
     }
 }

@@ -41,7 +41,7 @@
         </div>
     </header>
     <div class="container">
-        <section id="aboutUs" class="aboutUs">
+        <!-- <section id="aboutUs" class="aboutUs">
             <h2 class="title--big">About us</h2>
             <div class="aboutUs__content">
                 <div class="aboutUs__content__image">
@@ -273,38 +273,33 @@
                     </div>
                 </li>
             </ul>
-        </section>
+        </section> -->
         <section id="book">
             <h2 class="title--big">Book</h2>
             <div class="book">
-                <div class="book__form">
-                    <form>
-                        <input type="text" id="nameId" placeholder="Name:" name="name">
-                        <input type="email" id="emailId" placeholder="E-mail" name="email">
-                        <input type="tel" id="phoneId" placeholder="Phone:" name="phone">
-                        <input type="text" id="roomId" placeholder="Room:" name="room">
-                        <div>
-                            <div>
-                                <label for="adultsNumberId">Adults</label>
-                                <input type="number" id="adultsNumberId" name="adults">
-                                <label for="checkInId">Check-in</label>
-                                <input type="date" id="checkInId" name="checkin">
-                            </div>
-                            <div>
-                                <label for="childrenNumberId">Children</label>
-                                <input type="number" id="childrenNumberId">
-                                <label for="checkOutId">Check-out</label>
-                                <input type="date" id="checkOutId" name="checkout">
-                            </div>
-                        </div>
-                        <textarea placeholder="Would you like something else? Let us know:"></textarea>
-                        <div>
-                            <label>I have read and agree to the <a href="#">terms</a>.</label>
-                            <input type="checkbox" id="idTerms">
-                        </div>
-                        <button id="paymentButtun" type="submit" class="button">payment</button>
-                    </form>
-                </div>
+                <form class="book__form">
+                    <input class="text" type="text" id="nameId" placeholder="Name:" name="name">
+                    <input class="text" type="email" id="emailId" placeholder="E-mail" name="email">
+                    <input class="text" type="tel" id="phoneId" placeholder="Phone:" name="phone">
+                    <input class="text" type="text" id="roomId" placeholder="Room:" name="room">
+                    <div>
+                        <input class="text" type="number" id="adultsNumberId" placeholder="Adults:" name="adults">
+                        <input class="text" type="number" id="childrenNumberId" placeholder="Children:" name="children">
+                        <label for="checkInId">Check-in</label>
+                        <label for="checkOutId">Check-out</label>
+                        <input class="text" type="date" id="checkInId" placeholder="Check-in" name="checkin">
+                        <input class="text" type="date" id="checkOutId" placeholder="Check-out" name="checkout">
+                    </div>
+                    <textarea class="text" placeholder="Would you like something else? Let us know:"></textarea>
+                    <checkArea>
+                        <input type="checkbox" id="idTerms">
+                        <label for="idTerms" class="switch">
+                            <span class="slider"></span>
+                        </label>
+                        <p class="text">I have read and agree to the <a href="#"><u>terms</u></a>.</p>
+                    </checkArea>
+                    <button id="paymentButtun" type="submit" class="button">payment</button>
+                </form>
                 <div class="book__address">
                     <img src="./dist/images/book/map.jpg" alt="map fake Oasis">
                     <div class="book__address__content">
