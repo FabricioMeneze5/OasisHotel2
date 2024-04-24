@@ -1,0 +1,11 @@
+@use 'colors';
+
+footer {
+    padding: 16px;
+    margin-top: 64px;
+    background-image: linear-gradient(to top, rgb(0 , 0, 0,), rgba(52, 52, 52,));
+
+    p {
+        color: colors.$title1Color;
+    }
+}

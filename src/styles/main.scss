@@ -5,6 +5,7 @@
 @use 'amenities';
 @use 'bedrooms';
 @use 'book';
+@use 'footer';
 
 body {
     background-color: colors.$bgColor;
