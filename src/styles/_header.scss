@@ -1,6 +1,9 @@
 @use 'colors';
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
     padding: 16px;
     background-image: linear-gradient(to top, rgb(0 , 0, 0, 0.7), rgba(52, 52, 52, 0.7));
 
@@ -16,16 +19,13 @@ header {
         &__items {
             display: flex;
             justify-content: space-around;
+            font-weight: bolder;
     
             &__item {
-                padding: 16px;
+                padding: 16px 8px;
                 
                 a {
                     color: colors.$secondaryColor;
-                }
-                
-                img {
-                    margin-right: 5px;
                 }
             }
         }

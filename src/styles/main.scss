@@ -6,6 +6,11 @@
 @use 'bedrooms';
 @use 'book';
 @use 'footer';
+@use 'carousel';
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: colors.$bgColor;
@@ -16,10 +21,15 @@ h1, h2 {
 }
 
 h2 {
-    margin: 24px 0;
+    margin-bottom: 24px;
     text-align: center;
     font-style: italic;
     color: colors.$secondaryColor;
+}
+
+section {
+    padding-top: 86.6px;
+    padding-bottom: -86.6px;
 }
 
 @mixin title($fontSize: 32px) {
@@ -94,7 +104,7 @@ h2 {
     transform: translate(-50%, -50%);
     max-height: 90vh;
     width: 80vw;
-    z-index: 2;
+    z-index: 4;
     overflow: hidden;
     background-color: colors.$title1Color;
     
@@ -139,5 +149,5 @@ h2 {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.7);
-    z-index: 1;
+    z-index: 3;
     }
