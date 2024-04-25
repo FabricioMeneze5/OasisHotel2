@@ -21,15 +21,11 @@ h1, h2 {
 }
 
 h2 {
+    padding-top: 86.6px;
     margin-bottom: 24px;
     text-align: center;
     font-style: italic;
     color: colors.$secondaryColor;
-}
-
-section {
-    padding-top: 86.6px;
-    padding-bottom: -86.6px;
 }
 
 @mixin title($fontSize: 32px) {
@@ -88,10 +84,6 @@ section {
     border-bottom: solid 2px transparent;
 
     &:hover {
-        border-color: colors.$secondaryColor;
-    }
-
-    &--is-active {
         border-color: colors.$secondaryColor;
     }
 }

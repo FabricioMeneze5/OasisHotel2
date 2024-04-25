@@ -12,3 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+let counter = 1;
+setInterval(function() {
+    const currentSlide = document.getElementById('slide' + counter).checked = true;
+    counter ++;
+
+    if (counter > 5) {
+        counter = 1;
+    }
+}, 3000);

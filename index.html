@@ -12,7 +12,7 @@
             <h1 class="title--big">Oasis Resort</h1>
             <nav>
                 <ul class="navbar__items">
-                    <li class="navbar__items__item navButton navButton--is-active">
+                    <li class="navbar__items__item navButton">
                         <a href="#aboutUs">
                             <img src="./dist/images/header/buildings-fill.svg" alt="buildings">
                             About us
@@ -40,6 +40,29 @@
             </nav>
         </div>
     </header>
+    <section class="carousel">
+        <input class="rInput" type="radio" name="slide" id="slide1" checked>
+        <input class="rInput" type="radio" name="slide" id="slide2">
+        <input class="rInput" type="radio" name="slide" id="slide3">
+        <input class="rInput" type="radio" name="slide" id="slide4">
+        <input class="rInput" type="radio" name="slide" id="slide5">
+        
+        <div class="carousel__imgs">
+            <img src="./dist/images/carousel/carousel(1).jpg">
+            <img src="./dist/images/carousel/carousel(2).jpg">
+            <img src="./dist/images/carousel/carousel(3).jpg">
+            <img src="./dist/images/carousel/carousel(4).jpg">
+            <img src="./dist/images/carousel/carousel(5).jpg">
+        </div>
+        
+        <div class="carousel__navigation">
+            <label class="carousel__navigation__button" for="slide1"></label>
+            <label class="carousel__navigation__button" for="slide2"></label>
+            <label class="carousel__navigation__button" for="slide3"></label>
+            <label class="carousel__navigation__button" for="slide4"></label>
+            <label class="carousel__navigation__button" for="slide5"></label>
+        </div>
+    </section>
     <div class="container">
         <section id="aboutUs" class="aboutUs">
             <h2 class="title--big">About us</h2>

@@ -1,0 +1,66 @@
+@use 'colors';
+
+.carousel {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    
+    .rInput {
+        display: none;
+    }
+    
+    &__imgs {
+        display: flex;
+        width: 500%;
+        transition: .6s;
+        
+        img {
+            width: 100vw;
+            height: 50vh;
+            object-fit: cover;
+        }
+    }
+
+    &__navigation {
+        position: absolute;
+        top: calc(50vh + 100px);
+        left: 50%;
+        display: flex;
+        transform: translate(-50%);
+
+        &__button {
+            height: 15px;
+            width: 15px;
+            border: solid 2px colors.$title1Color;
+            margin: 0 8px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: .5s ease;
+
+            &:hover {
+                background-color: colors.$secondaryColor;
+            }
+        }
+    }
+
+    #slide1:checked ~ .carousel__imgs {
+        margin-left: 0;
+    }
+
+    #slide2:checked ~ .carousel__imgs {
+        margin-left: -100%;
+    }
+
+    #slide3:checked ~ .carousel__imgs {
+        margin-left: -200%;
+    }
+
+    #slide4:checked ~ .carousel__imgs {
+        margin-left: -300%;
+    }
+
+    #slide5:checked ~ .carousel__imgs {
+        margin-left: -400%;
+    }
+}
