@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    //find sections on click
     const linkHead = document.head.querySelectorAll('a');
 
     linkHead.forEach(link => {
@@ -11,7 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
-    
+
+    //automatic transition carousel
     let counter = 1;
     setInterval(function() {
         const currentSlide = document.getElementById('slide' + counter).checked = true;

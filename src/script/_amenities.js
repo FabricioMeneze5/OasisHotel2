@@ -12,20 +12,20 @@ document.addEventListener('DOMContentLoaded', function() {
             clickedButton.target.classList.add('navButton--is-active');
         });
     }
-})
-
+});
+//remove button' border 
 function removeButtonActive() {
     const buttons = document.querySelectorAll('[data-tab-button]');
 
     for (let i = 0; i < buttons.length; i++) {
         buttons[i].classList.remove('navButton--is-active');
     }
-}
-
+};
+//hidde tabs
 function hideTabs() {
     const tabsContainer = document.querySelectorAll('[data-tab-id]');
 
     for (let i = 0; i < tabsContainer.length; i++) {
         tabsContainer[i].classList.remove('amenities__list--is-active');
     }
-}
+};
