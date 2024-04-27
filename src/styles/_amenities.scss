@@ -4,15 +4,23 @@
     &__tabs {
         margin-bottom: 16px;
 
+        @media (max-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
         &__button {
             margin-right: 5px;
-        }
     }
 
     &__list {
         display: none;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 8px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
 
         &--is-active {
             display: grid;
@@ -21,7 +29,6 @@
         &__item {
             overflow: hidden;
             border-radius: 2%;
-            margin-top: 8px;
 
             img {
                 width: 100%;

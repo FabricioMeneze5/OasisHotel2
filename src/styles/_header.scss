@@ -7,6 +7,10 @@ header {
     padding: 16px;
     background-image: linear-gradient(to top, rgb(0 , 0, 0, 0.7), rgba(52, 52, 52, 0.7));
 
+    @media (max-width: 768px) {
+        padding: 0;
+    }
+
     h1 {
         color: colors.$title1Color;
         font-style: italic;
@@ -14,15 +18,29 @@ header {
 
     .navbar {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+        }
     
         &__items {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             font-weight: bolder;
-    
+            
             &__item {
-                padding: 16px 8px;
+                padding: 20px 8px;
+
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    padding: 20px 0;
+                    margin-left: 10px;
+                }
+
+                @media (max-width: 768px) {
+                    padding: 8px;
+                }
             }
         }
     }

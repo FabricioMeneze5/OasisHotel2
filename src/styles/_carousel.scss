@@ -5,6 +5,14 @@
     width: 100%;
     display: flex;
     overflow: hidden;
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        height: 30vh;
+    }
+
+    @media (max-width: 768px) {
+        height: 20vh;
+    }
     
     .rInput {
         display: none;
@@ -19,6 +27,14 @@
             width: 100vw;
             height: 50vh;
             object-fit: cover;
+
+            @media (min-width: 768px) and (max-width: 1023px) {
+                height: 30vh;
+            }
+
+            @media (max-width: 768px) {
+                height: 20vh;
+            }
         }
     }
 
@@ -28,6 +44,14 @@
         left: 50%;
         display: flex;
         transform: translate(-50%);
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            top: calc(30vh + 100px);
+        }
+
+        @media (max-width: 768px) {
+            top: calc(20vh + 100px);
+        }
 
         &__button {
             height: 15px;

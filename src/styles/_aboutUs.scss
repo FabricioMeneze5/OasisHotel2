@@ -6,6 +6,10 @@
         grid-template-columns: 1fr 1fr;
         gap: 24px;
 
+        @media (max-width: 768px) {
+            display: block;
+        }
+
         h3 {
             font-weight: 400;
         }
